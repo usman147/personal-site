@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman Ghani - Designer & Developer | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header__main">
+        <div class="content__wrapper d-flex">
+            <div class="header__logo">
+                <a href="./index.html"><img src="images/logo.png" alt="Logo Image"></a>
+            </div> <!-- Logo Ends Here -->
+            <nav class="header__navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li class="active"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav> <!-- Navigation Ends Here -->
+        </div>
+    </header> <!-- Header Ends Here -->
+    
+    <div id="navigation__toggle">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+    </div>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./works.html">Works</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="page__contact">
+        <div class="content__wrapper">
+            <h1 class="page__title">Contact</h1>
+            <div class="box-grid">
+                <div class="content__leftSide">
+                    <div class="contact-form">
+                        <form action="#">
+                            <fieldset class="dual-fields">
+                                <input type="text" name="" id="" placeholder="Name" class="inputfield" required>
+                                <input type="number" name="" id="" placeholder="Cell no" class="inputfield" required>
+                            </fieldset>
+                            <fieldset>
+                                <input type="email" name="" id="" placeholder="Email" class="inputfield" required>
+                            </fieldset>
+                            <fieldset>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </fieldset>
+                            <input type="submit" class="submit-btn" value="Send">
+                        </form>
+                    </div>
+                </div> <!-- Left Side Ends -->
+                <div class="content__rightSide">
+                    <div class="contact__details">
+                        <div class="contact__way">
+                            <div class="contact__wayIcon"><img src="images/pin.png" alt=""></div>
+                            <div class="contact___title">Address</div>
+                            <div class="contact___info">Saddar, Hyderabad, Pakistan</div>
+                        </div>
+                        <div class="contact__way">
+                            <div class="contact__wayIcon"><img src="images/phone.png" alt=""></div>
+                            <div class="contact___title">Phone</div>
+                            <div class="contact___info"><a href="tel:+923213088727">+923213088727</a></div>
+                        </div>
+                        <div class="contact__way">
+                            <div class="contact__wayIcon"><img src="images/email.png" alt=""></div>
+                            <div class="contact___title">Email</div>
+                            <div class="contact___info"><a href="mailto:usman.brilliant@gmail.com">usman.brilliant@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div> <!-- Right Side Ends -->
+            </div>
+
+        </div>
+    </section>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#navigation__toggle').click(function(){
+                $(".mobile-menu").toggleClass('open');
+            });
+        });
+    </script>  
+</body>
+</html>
